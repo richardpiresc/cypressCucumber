@@ -1,4 +1,4 @@
-import { Given, And, When, Then} from "@badeball/cypress-cucumber-preprocessor";
+import { Given, When, Then} from "@badeball/cypress-cucumber-preprocessor";
 
 
 Given(/^que estou na pagina da amazon$/, () => {
@@ -31,49 +31,3 @@ When(/^mantenho o endereco atual e seleciono enviar$/, () => {
 Then(/^seleciono boleto como pagamento e valido envio do email$/, () => {
     cy.finalizarCompra()
 });
-
-
-
-
-
-
-
-
-/*
-
-Given(/^que estou no site iterasys e aciono Entrar$/, () => {
-	cy.homePage()
-    cy.acionarCriarConta()
-});
-
-
-When(/^meu nome completo "([^"]*)"$/, (seuNome) => {
-	cy.inserirNome(seuNome)
-});
-
-
-When(/^meu email "([^"]*)"$/, (seuEmail) => {
-	cy.inserirSeuEmail(seuEmail)
-});
-
-
-When(/^confirmo meu email "([^"]*)"$/, (confirmaEmail) => {
-	cy.confirmaSeuEmail(confirmaEmail)
-});
-
-
-When(/^aciono o botão Proximo sou direcionado para tela de login$/, () => {
-	cy.acionarProximo()
-    cy.alertaPossuiConta()
-});
-
-
-When(/^digito meu email "([^"]*)" e senha "([^"]*)"$/, (email,senha) => {
-	cy.inserirEmail(email)
-    cy.inserirSenha(senha)
-});
-
-
-Then(/^aciono o botao Entrar$/, () => {
-	cy.acionarEntrar()
-});*/
